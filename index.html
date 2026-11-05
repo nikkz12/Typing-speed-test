@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TypeMaster - Typing Speed Test</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <div class="logo">Type<span>Master.</span></div>
+            <p>Improve your typing speed. One word at a time.</p>
+        </header>
+
+        <!-- Statistics -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <span class="stat-label">TIME LEFT</span>
+                <h2 id="timer">60</h2>
+                <span class="stat-unit">Seconds</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">TYPING SPEED</span>
+                <h2 id="wpm">0</h2>
+                <span class="stat-unit">Words per minute</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">ACCURACY</span>
+                <h2 id="accuracy">100%</h2>
+                <span class="stat-unit">Correct characters</span>
+            </div>
+
+        </section>
+
+        <!-- Practice area -->
+
+        <section class="practice-card">
+
+            <div class="section-heading">
+                <div>
+                    <span class="tag">PRACTICE SESSION</span>
+                    <h2>Ready, Set, Type!</h2>
+                </div>
+
+                <span class="duration">60 SECOND TEST</span>
+            </div>
+
+            <div class="paragraph-box">
+                <p id="paragraph"></p>
+            </div>
+
+            <label for="input">START TYPING BELOW</label>
+
+            <textarea
+                id="input"
+                placeholder="Click Start Test to begin typing..."
+                disabled
+                spellcheck="false"
+            ></textarea>
+
+            <div class="feedback">
+                <span id="progress">0 characters typed</span>
+                <span>Green = Correct | Red = Incorrect</span>
+            </div>
+
+            <div class="buttons">
+                <button id="start" class="start-btn">
+                    Start Test
+                </button>
+
+                <button id="restart" class="restart-btn">
+                    Restart
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Final results -->
+
+        <section id="result" class="result" hidden>
+
+            <div class="result-icon">✓</div>
+
+            <h2>Test Completed!</h2>
+
+            <p>Here is how you performed.</p>
+
+            <div class="final-stats">
+
+                <div>
+                    <h3 id="finalWpm">0</h3>
+                    <p>WPM</p>
+                </div>
+
+                <div>
+                    <h3 id="finalAccuracy">100%</h3>
+                    <p>Accuracy</p>
+                </div>
+
+                <div>
+                    <h3 id="finalCorrect">0</h3>
+                    <p>Correct characters</p>
+                </div>
+
+            </div>
+
+            <button id="tryAgain" class="start-btn">
+                Try Again
+            </button>
+
+        </section>
+
+        <footer>
+            Built with HTML, CSS and JavaScript
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
